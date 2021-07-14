@@ -1,7 +1,7 @@
 import logo from './logo.svg';
-import {Header} from "./Components/header.js";
-import {Expense} from "./Components/expense.js";
-import {IncomeExpense} from "./Components/incomeExpense.js";
+import { Header } from "./Components/header.js";
+import { Expense } from "./Components/expense.js";
+import { IncomeExpense } from "./Components/incomeExpense.js";
 import { TransactionList } from './Components/TransactionList.js';
 import { AddTransaction } from "./Components/AddTransaction.js"
 import { GlobalProvider}  from "./Context/GlobalState.js";

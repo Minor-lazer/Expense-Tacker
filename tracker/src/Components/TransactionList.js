@@ -1,15 +1,15 @@
 import React from "react";
-import {GlobalContext} from "../Context/GlobalState.js";
 import {Transaction} from "./Transaction.js";
 import {useContext} from "react";
+import {GlobalContext} from "../Context/GlobalState.js";
 
 export const TransactionList = () => 
 {
-    const {transactions} = useContext(GlobalProvider);
+    const {transactions} = useContext(GlobalContext);
     return (
 
         <ul id="list" className="list">
-        {initialstate.map((transaction)=>{<Transaction  key={transactions.id}/>})}
+        {transactions.map((transaction) => (<Transaction  key = {transaction.id} transaction = {transaction}/>))} 
         </ul>
     )
 }

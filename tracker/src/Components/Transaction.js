@@ -4,8 +4,8 @@ export const Transaction = ({transaction}) =>
 {
   const sign = transaction.amount < 0 ? "-" : "+";   
     return ( 
-    <li className ="minus">
-      {transaction.text} Cash<span>{sign}${transaction.amount}</span><button className = "delete-btn">x</button>
+    <li className ={ transaction.amount < 0 ? "minus" : "plus"}>
+      {transaction.text} Cash<span>{sign}${Math.abs(transaction.amount)}</span><button className = "delete-btn">x</button>
     </li>
     )
 }

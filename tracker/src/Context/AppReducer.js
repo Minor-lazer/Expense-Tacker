@@ -1,6 +1,6 @@
 import React from "react";
 
-export default (state,action) => 
+export function AppReducer (state,action) 
 {
     switch(action.type)
     {
