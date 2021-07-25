@@ -12,8 +12,8 @@ export function Balance ()
 
    return (
       <> 
-      <h1>Your Balance</h1>,      
-      <h4>${total}</h4>
+      <h3>Your Balance</h3>,      
+      <h4>₹{total}</h4>
       </>
            
    )
